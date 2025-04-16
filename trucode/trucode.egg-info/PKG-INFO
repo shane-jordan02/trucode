@@ -1,0 +1,91 @@
+Metadata-Version: 2.4
+Name: trucode
+Version: 0.1.0
+Summary: A tool for analyzing Python code and suggesting improvements
+Home-page: https://github.com/yourusername/trucode
+Author: TruCode Developer
+Author-email: dev@trucode.example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: transformers>=4.21.0
+Requires-Dist: torch>=1.10.0
+Requires-Dist: pygments>=2.10.0
+Requires-Dist: astpretty>=2.1.0
+Requires-Dist: tqdm>=4.62.0
+Requires-Dist: packaging>=21.0
+Requires-Dist: astroid>=2.9.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# TruCode
+
+A Python code analyzer that detects common issues and suggests improvements.
+
+## Features
+
+- Parse Python code and extract meaningful information
+- Detect common issues in Python code (syntax errors, unused imports, etc.)
+- Generate improvement suggestions
+- Optional AI-powered code analysis
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/trucode.git
+cd trucode
+
+# Install the package
+pip install -e .
+```
+
+## Usage
+
+```bash
+# Analyze a Python file
+trucode path/to/your/python_file.py
+
+# Enable verbose output
+trucode path/to/your/python_file.py --verbose
+
+# Disable AI analysis
+trucode path/to/your/python_file.py --no-ai
+```
+
+## Requirements
+
+- Python 3.7+
+- See requirements.txt for package dependencies
+
+## Project Structure
+
+```
+trucode/
+├── analyzer/
+│   ├── __init__.py
+│   ├── detector.py
+│   ├── model_wrapper.py
+│   ├── parser.py
+│   └── suggester.py
+├── utils/
+│   ├── __init__.py
+│   └── helpers.py
+├── __init__.py
+├── main.py
+└── examples/
+    └── test_code.py
+```
+
+## License
+
+MIT

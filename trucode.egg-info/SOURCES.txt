@@ -1,0 +1,8 @@
+README.md
+setup.py
+trucode.egg-info/PKG-INFO
+trucode.egg-info/SOURCES.txt
+trucode.egg-info/dependency_links.txt
+trucode.egg-info/entry_points.txt
+trucode.egg-info/requires.txt
+trucode.egg-info/top_level.txt
